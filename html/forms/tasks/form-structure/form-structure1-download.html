@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>Form structure: Task 1</title>
+    <title>Assessment wanted for Form structure 1 skill test</title>
     <style>
       body {
         background-color: #fff;
@@ -20,18 +20,36 @@
 
   <body>
     <form>
-      Name:
-      <input type="text" id="name" name="name">
-
-      Age:
-      <input type="number" id="age" name="age">
-
-      Comment:
-      <input type="text" id="comment" name="comment">
-
-      Email:
-      <input type="email" id="email" name="email">
-    </form>
+      <section>
+        <fieldset>
+        <legend>Personal details</legend>
+        <p>
+          <label for="name">Name:
+            <input type="text" id="name" name="name">
+          </label>
+        </p>
+        <p>
+          <label for="age">Age:
+            <input type="number" id="age" name="age">
+          </label>
+        </p>
+        </fieldset>
+        
+      </section>
+        <fieldset>
+        <legend>Comment information</legend>
+        <p>
+          <label for="comment">Comment:
+            <input type="text" id="comment" name="comment">
+          </label>
+        </p>
+        <p>
+          <label for="email">Email:
+            <input type="email" id="email" name="email">
+          </label>
+        </p>
+        </fieldset>
+      </form>
   </body>
 
 </html>
