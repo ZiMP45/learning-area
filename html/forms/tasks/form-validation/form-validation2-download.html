@@ -24,19 +24,19 @@
       <ul>
         <li>
           <label for="uname">User name:</label>
-          <input type="text" name="uname" id="uname" required>
+          <input type="text" name="uname" id="uname" minlength="5" maxlength="20" pattern="[a-z]\.[a-z1-9]{3,}" required>
         </li>
         <li>
           <label for="email">Email address:</label>
-          <input type="text" name="email" id="email" required>
+          <input type="text" name="email" id="email" pattern="[a-zA-Z\d]+@bigcorp.eu" required>
         </li>
         <li>
           <label for="phone">Phone number:</label>
-          <input type="text" name="phone" id="phone" required>
+          <input type="text" pattern="\d{10}|\d{3}[ -\.]\d{3}[ -\.]\d{4}" name="phone" id="phone" required>
         </li>
         <li>
           <label for="comment">Comment:</label>
-          <textarea name="comment" id="comment" required>
+          <textarea name="comment" id="comment" maxlength="200" required>
           </textarea>
         </li>
         <li>
